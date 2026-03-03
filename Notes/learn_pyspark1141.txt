@@ -1,0 +1,3 @@
+# col functions
+select - df.select(col("id"), upper(col("name")).alias("name_upper"))
+selectExpr - df.selectExpr("id", "name", "amount * 2 as amount_double")  --Accepts strings as expressions, written like SQL
